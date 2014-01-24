@@ -15,7 +15,8 @@ import cPickle as pickle
 from matplotlib import ticker
 
 data_dir = './'
-backends = ['anaconda', 'anaconda+mkl']
+#backends = ['anaconda', 'anaconda+mkl']
+backends = ['anaconda+mkl']
 
 
 def plot_results(algo, datas, xlabel, ylabel, note, factor=None):

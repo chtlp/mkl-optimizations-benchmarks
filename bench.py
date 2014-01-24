@@ -107,7 +107,7 @@ if __name__ == '__main__':
 
     print("checking timers...")
     test_timers()
-    logNs = np.arange(6,13.5,0.5) # uncomment to run the big stuff
+    logNs = np.arange(6,14.5,0.5) # uncomment to run the big stuff
 #    logNs = np.arange(3,7,0.5) # uncomment to run quick tests
     Ns = np.exp2(logNs)
     trials = 5
