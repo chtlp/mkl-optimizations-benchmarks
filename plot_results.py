@@ -40,6 +40,8 @@ def plot_results(algo, datas, xlabel, ylabel, note, factor=None):
     for backend, data in zip(backends, datas):
         N = data[:, 0]
         plt.plot(N, data[:, 1], 'o-', linewidth=2, markersize=5, label=backend)
+        for x, y in zip(N, data[:, 1]):
+            plt.annotate('%d' % y, (x, y+10))
         plt.legend(loc='upper left', fontsize=18)
 
     plt.savefig(algo + '.png')
